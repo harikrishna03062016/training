@@ -36,13 +36,36 @@ Run git add gitTrainingTutorail.txt
 --------------
 Run git status
 --------------
-On branch master ----1. default current branch
+Output:
+---------------
+On branch master ----1. default current branch 
 
-No commits yet------- 2. First commit
+No commits yet------- 2. First commit - Shows that no commit has been made and add command has been used to build the first commit
  Changes to be committed:
   (use "git rm --cached <file>..." to unstage)
 
-        new file:   gitTraining.txt -------3. New files to index
+        new file:   gitTraining.txt -------3. New Added files to index
 
+-----------------------------------------------------------
 
+Git Add - can also be used to pass directories instead of files
+
+*******************************************************************************************************
+Technique 3: Git commit : committing changes to files
+
+Committing stores changes to one or more files
+
+Each commit consists of the message entered by the author, details of the author, unique reference id, a pointer to the preeceding commit, the date the commit was 
+created and a pointer to the contents of files 
+
+----------------
+Run git commit --message "Initial commit"
+------------------------
+Output
+------------------
+[master (root-commit) 1d9bd97] Initial commit      -----name of the branch where commit is created
+ 1 file changed, 48 insertions(+)		   -----number of files changed and the number of lines inserted or deleted
+ create mode 100644 gitTraining.txt		   -----New file created with Unix file mode
+
+------------------------------------
 
