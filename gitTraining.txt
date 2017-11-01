@@ -68,4 +68,12 @@ Output
  create mode 100644 gitTraining.txt		   -----New file created with Unix file mode
 
 ------------------------------------
+Run git commit -all  			- commit all changes without explicitly doing an add - not recommended
+-----------------------------------
+
+**************************************************************************************************************
+
+Technique 4: Viewing history: glt log, gltk, gltx
+
+To have a look at the commits and changes made since from the time of repository creation
 
