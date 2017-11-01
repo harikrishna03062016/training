@@ -1,0 +1,48 @@
+Git typical workflow - add/commint/checkout
+
+To add anything into git we need one or more commits in our local repository.
+
+We change the contents of files in a repository, review the diffs add them to index, create a new cmmit from the contents of the index and repeat this cycle
+
+--------------------------------------------------------------
+		Local Repository Directory(\gitTraining\.git)
+--------------------------------------------------------------
+git    /|\ buits from		| other version of files are 
+commit	|contents of index	|checked out from branches or previous 
+	|and stores in 		|commits
+	| repository		|
+----------------		|git checkout
+Local Index file		|
+----------------		|
+git    /|\ changes to files	|
+	|are added to index	|
+add	|to build next commit  \|/
+----------------------------------------------------------
+		Local Working Directory(\gitTraining)
+---------------------------------------------------------- 
+
+
+Gits index is staging area and is used to build next commits
+Rather than requiring all changes in the working tree to make up the next commit
+Git allows files to be added incrementally to the index
+
+Git add: Building a new commit in the indexing staging area
+
+Add file in the working directory (\gitTraining\gitTrainingTutorial.txt)
+----------
+Run git add gitTrainingTutorail.txt
+---------- gives no output
+
+--------------
+Run git status
+--------------
+On branch master ----1. default current branch
+
+No commits yet------- 2. First commit
+ Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   gitTraining.txt -------3. New files to index
+
+
+
