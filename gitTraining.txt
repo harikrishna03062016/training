@@ -77,3 +77,99 @@ Technique 4: Viewing history: glt log, gltk, gltx
 
 To have a look at the commits and changes made since from the time of repository creation
 
+---------------------------------------
+Run git log
+--------------------------------------
+
+R:\Kaggle\GitPractice\gitTraining>git log
+commit 827f70ebcbf4e8a10203112f466aae4523b3f0f2 (HEAD -> master)
+Author: harikrishna
+Date:   Wed Nov 1 15:36:35 2017 +0530
+
+    First Changes
+
+commit 1d9bd9717de1f18ff578f619067be98c7c9307dc
+Author: harikrishna
+Date:   Wed Nov 1 15:30:50 2017 +0530
+
+    Initial commit
+
+R:\Kaggle\GitPractice\gitTraining>
+------------------------------------------------------------------------------------------------------------------
+*******************************************************************************************************
+Technique 5: Viewing the difference between commits: glt diff
+
+diff - is known as the difference between 2 commits
+
+master~1 - refers to one commit before the current master
+
+Displays modifications per line
+-------------------------------------------------
+Run git diff master~1 master
+------------------------------------------------
+
+Below command displays the stats of changes instead of briefing what has changed
+-------------------------------------------------
+Run git diff --stat master~1 master
+------------------------------------------------
+Output:
+---------
+R:\Kaggle\GitPractice\gitTraining>git diff --stat master~2 master
+ gitTraining.txt | 37 ++++++++++++++++++++++++++++++++++---
+ 1 file changed, 34 insertions(+), 3 deletions(-)
+
+
+Modifications per word
+-------------------------------------------------
+Run git diff --word-diff master~1 master
+------------------------------------------------
+
+if to see the SHA-1 of a ref
+
+-------------------------------------------------
+Run git rev-parse master~2
+------------------------------------------------
+
+*******************************************************************************************************
+Remote Git
+*******************************************************************************************************
+
+Technique 6: Adding a remote repository: git remote add
+
+2 Repositories - Remote and Local
+
+Local Repository to send or receive data from remote repository we need to add a remote repository
+
+git push - sends new commits from local to remote
+
+git fetch - retrieves from it any new commits made by others
+
+
+--------------------------------------------------------------
+		Remote repository Url(www.github.com\gitTraining\gitTraining.txt)
+--------------------------------------------------------------
+git    /|\ Local changes	|git fetch (or git pull) 
+push	|pushed upto		|changes from Remote repository
+	|remote			|are fetched to local repository
+	|repository		|
+	|		       \|/
+--------------------------------------------------------------
+		Local Repository Directory(\gitTraining\.git)
+--------------------------------------------------------------
+git    /|\ buits from		| other version of files are 
+commit	|contents of index	|checked out from branches or previous 
+	|and stores in 		|commits
+	| repository		|
+----------------		|git checkout
+Local Index file		|
+----------------		|
+git    /|\ changes to files	|
+	|are added to index	|
+add	|to build next commit  \|/
+----------------------------------------------------------
+		Local Working Directory(\gitTraining)
+---------------------------------------------------------- 
+
+
+
+
