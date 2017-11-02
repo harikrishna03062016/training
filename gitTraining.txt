@@ -171,5 +171,42 @@ add	|to build next commit  \|/
 ---------------------------------------------------------- 
 
 
+Adding local repository to Remote
+--------------------------------------------------------------------------------------------------------------------
+Run git remote add origin https://github.com/harikrishna03062016/training/training.git
+--------------------------------------------------------------------------------------------------------------------
 
+"origin" here is a convention, not part of the command. "origin" is the local name of the remote repository.
+
+To 
+--------------------------------------------------------------------------------------------------------------------
+Run git remote --verbose
+--------------------------------------------------------------------------------------------------------------------
+R:\Kaggle\GitPractice\gitTraining>git remote --verbose
+origin  https://github.com/harikrishna03062016/training/training.git (fetch)  ---- fetch url
+origin  https://github.com/harikrishna03062016/training/training.git (push)	 ---- push url
+--------------------------------------------------------------------------------------------------------------------
+
+
+Technique 7: Pushing changes to remote location: git push
+
+--------------------------------------------------------------------------------------------------------------------
+Run git push --set-upstream origin master
+-------------------------------------------------------------------------------------------------------------------- 
+Output:
+--------
+R:\Kaggle\GitPractice\gitTraining>git remote add origin2 https://github.com/harikrishna03062016/training.git
+
+R:\Kaggle\GitPractice\gitTraining>git push --set-upstream origin2 master
+Counting objects: 12, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (12/12), 2.70 KiB | 394.00 KiB/s, done.
+Total 12 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas: 100% (4/4), done.
+To https://github.com/harikrishna03062016/training.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin2.
+
+---------------------------------------------------------------------------------------------------------------------
 
